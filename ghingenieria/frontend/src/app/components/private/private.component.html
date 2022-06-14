@@ -1,9 +1,9 @@
 <main class="container">
-  <h1 class="text-center my-5">Mi app de tareas</h1>
-  <h2>Contenido privado - acceso solo a usuarios con sesión válida</h2>
+  <h1 class="text-center my-5">Preguntas</h1>
+  <h2>Acceso a usuarios Registrados</h2>
   <form (ngSubmit)="newTodo()">
     <div class="mb-3">
-      <label for="name" class="form-label">Nombre de la tarea</label>
+      <label for="name" class="form-label">Preguntas/Comentarios</label>
       <input
         type="text"
         class="form-control"
@@ -13,29 +13,33 @@
         [(ngModel)]="todo.name"
       />
     </div>
-    <button type="submit" class="btn btn-primary">Crear tarea</button>
+    <button type="submit" class="btn btn-primary">Enviar</button>
   </form>
 
+  
   <ng-container *ngIf="isEmpty; else notEmpty">
-    <h3 class="text-center">No tiene tareas</h3>
+    <h3 class="text-center">Leido</h3>
   </ng-container>
   <ng-template #notEmpty>
-    <h2 class="text-center">Tareas pendientes</h2>
+    <h2 class="text-center">Preguntas/Comentarios</h2>
     <ul class="list-group mt-5">
       <li
         class="list-group-item d-flex justify-content-between align-items-center"
         *ngFor="let todo of pendingTodos"
       >
-        <div>{{ todo.name }}</div>
-        <div>
+      <div>{{ todo.name }}</div>
+        <div class="preguntasd">
+          <li>
           <label class="px-5"
             ><input
               type="checkbox"
               class="form-check-input"
               [checked]="todo.completed"
               (click)="updTodo(todo._id)"
-            />Completada</label
-          >
+            />Resuelto
+            </label
+          ></li>
+          <li>
           <button
             type="button"
             class="btn btn-danger"
@@ -43,11 +47,12 @@
           >
             Eliminar
           </button>
+        </li>
         </div>
       </li>
     </ul>
     <hr class="my-5" />
-    <h2 class="text-center">Tareas completadas</h2>
+    <h2 class="text-center">Leido</h2>
     <ul class="list-group mt-5">
       <li
         class="list-group-item d-flex justify-content-between align-items-center"
@@ -61,11 +66,11 @@
               class="form-check-input"
               [checked]="todo.completed"
               (click)="updTodo(todo._id)"
-            />Completada</label
+            />Volver</label
           >
           <button
             type="button"
-            class="btn btn-danger"
+            class="btn btn-secondary"
             (click)="delTodo(todo._id)"
           >
             Eliminar
@@ -74,4 +79,27 @@
       </li>
     </ul>
   </ng-template>
-</main>
+  
+  <h1 class="text-center my-5">Manuales</h1>
+  <div class="quienes">
+    <p> 
+      En esta página puedes descargar manuales que no se encuentran en otras páginas y acceder a informacion a la que solo tienen derecho los usuarios 
+      registrados. 
+      <b>Muchas gracias por estar Aquí.</b>
+    </p>
+    </div>
+    
+    <section class="preguntas">
+     
+      <ul>
+         <li> <a href="https://drive.google.com/drive/folders/1jauOJC3jOjIPkd1ggIQE14WUBwo4zrxC?usp=sharing">Nissan B13</a></li>
+         
+         <li> <a href="https://drive.google.com/drive/folders/1h34T8OLJ7VXUR2ZW7WBsI8044uS2BcJj?usp=sharing">Nissan B14</a></li>
+        
+         <li> <a href="https://drive.google.com/drive/folders/17VS7qQpyOXvSoEaaFRXwr_aR5gUC6ykr?usp=sharing">Nissan B15</a></li>
+        
+         <li> <a href="https://drive.google.com/drive/folders/1WN62NWc9VjDvpZrE4AHeqkUZJYPEWyec?usp=sharing">Nissan B16</a></li>
+      </ul>
+    
+  </section>
+ </main>

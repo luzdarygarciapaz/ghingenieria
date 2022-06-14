@@ -42,11 +42,11 @@ Asegurese de no tener ningún error en cada una de las tres terminales.
 
 3. Abra un navegador web e ingrese a: ``http://localhost:4200``
 
-Navegue por el sitio
+Navegar por el sitio
 
-Para acceder al contenido "Privado" primero debe registrarse y luego iniciar sesión.
+Para acceder al contenido "Privado" que es un blog, primero debe registrarse y luego iniciar sesión.
 
-4. En la zona de contenido "Privado" podrá ejecutar operaciones CRUD acerca de una lista de tareas.
+4. En la zona de contenido "Blog" podrá ejecutar operaciones CRUD acerca de una lista de tareas.
 
 ¡Listo!
 
