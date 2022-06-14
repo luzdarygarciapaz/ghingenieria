@@ -1,4 +1,4 @@
-# Proyecto final de apoyo
+# Proyecto final
 
 ## Descripción
 
@@ -13,7 +13,7 @@ Para ejecutar este proyecto en su local asegurese de:
 
 ### Instrucciones
 
-1. Clonar repositorio ``https://github.com/luzdarygarciapaz/ghingenieria``
+1. Clonar repositorio ``https://github.com/luzdarygarciapaz/ghingenieria/tree/main/ghingenieria``
 
 2. Una vez clonado el repositorio en su local, debe abrir 3 terminales y ejecutar lo siguiente
 
