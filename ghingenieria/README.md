@@ -13,7 +13,7 @@ Para ejecutar este proyecto en su local asegurese de:
 
 ### Instrucciones
 
-1. Clonar repositorio ``https://github.com/javierandresgp/bit-course-full_stack_01/tree/main/26``
+1. Clonar repositorio ``https://github.com/luzdarygarciapaz/ghingenieria``
 
 2. Una vez clonado el repositorio en su local, debe abrir 3 terminales y ejecutar lo siguiente
 
@@ -51,4 +51,4 @@ Para acceder al contenido "Privado" primero debe registrarse y luego iniciar ses
 ¡Listo!
 
 #### Autor
-[dev](https://javierandresgp.com)
+Luz Dary Garcia Paz
