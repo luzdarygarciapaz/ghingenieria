@@ -30,13 +30,13 @@
       <div>{{ todo.name }}</div>
         <div class="preguntasd">
           <li>
-          <label class="px-5"
+          <label class="px-4"
             ><input
               type="checkbox"
               class="form-check-input"
               [checked]="todo.completed"
               (click)="updTodo(todo._id)"
-            />Resuelto
+            />Leido
             </label
           ></li>
           <li>
@@ -45,7 +45,7 @@
             class="btn btn-danger"
             (click)="delTodo(todo._id)"
           >
-            Eliminar
+          Eliminar
           </button>
         </li>
         </div>
@@ -60,7 +60,7 @@
       >
         <div>{{ todo.name }}</div>
         <div>
-          <label class="px-5"
+          <label class="px-4"
             ><input
               type="checkbox"
               class="form-check-input"
